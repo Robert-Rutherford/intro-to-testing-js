@@ -24,3 +24,7 @@ function isFive(val) {
 function isEven(val) {
     return parseInt(val)% 2 === 0;
 }
+
+function isVowel(char) {
+    return char === "a" || char === "A";
+}
