@@ -20,3 +20,7 @@ function sayHello(name) {
 function isFive(val) {
     return val == 5;
 }
+
+function isEven(val) {
+    return parseInt(val)% 2 === 0;
+}
