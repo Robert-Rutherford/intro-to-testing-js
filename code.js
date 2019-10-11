@@ -16,3 +16,7 @@ function sayHello(name) {
     }
     return "Hello, "+ name+"!";
 }
+
+function isFive(val) {
+    return val == 5;
+}
