@@ -11,5 +11,8 @@ function sayHello(name) {
     // }else {
     //     return "Hello, Jane!";
     // }
+    if (typeof name !== "string"){
+        name = "World";
+    }
     return "Hello, "+ name+"!";
 }
