@@ -124,3 +124,33 @@ describe("isVowel", function () {
         expect(isVowel()).toBe(false);
     });
 });
+
+describe('add', function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return 5 whenever executed as add(2,3)', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return -12 whenever executed as add(-3,-9)', function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should return 11 whenever executed as add("5",6)', function () {
+        expect(add("5",6)).toBe(11);
+    });
+    it('should return 6 whenever executed as add("-4","10")', function () {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('should return NaN whenever executed as add("Banana","Split")', function () {
+        expect(add("Banana","Split")).toBeNaN();
+    });
+    it('should return NaN whenever executed as add(2,"Apples")', function () {
+        expect(add(2,"Apples")).toBeNaN();
+    });
+    it('should return NaN whenever executed as add()', function () {
+        expect(add()).toBeNaN();
+    });
+});
+
+
+
